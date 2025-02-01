@@ -1,27 +1,33 @@
-# Custom Python Datetime Library
+# Grocery Shopping List App
 
-A Python library that provides an enhanced datetime handling system with additional utility methods and a user-friendly interface.
+A Kotlin-based Android application that helps users manage their grocery shopping list with features to add, delete, and track items along with their quantities and prices.
 
 ## Features
 
-1. **Flexible DateTime Creation**
-   - Create datetime objects with or without arguments
-   - Current time initialization when no arguments provided
-   - Support for ISO 8601 format parsing
+1. **Item Management**
+   - Add new grocery items with name, price, and quantity
+   - Delete existing items with a single click
+   - Real-time updates to the grocery list
 
-2. **Date Validation and Formatting**
-   - Validate date components (year, month, day)
-   - Convert to ISO 8601 format
-   - Human-readable format conversion
+2. **User Interface**
+   - Clean and intuitive RecyclerView layout
+   - Floating Action Button (FAB) for adding new items
+   - Dialog-based item entry system
+   - Toast notifications for user feedback
 
-3. **Date Calculations**
-   - Calculate differences between dates in various units (days, weeks, months)
-   - Determine day of the week
+3. **Data Persistence**
+   - Local database storage using Room
+   - ViewModel architecture for data management
+   - Repository pattern implementation
 
-4. **String Parsing**
-   - Parse datetime strings
-   - Multiple format support
+## Project Structure
 
+The project follows MVVM (Model-View-ViewModel) architecture:
+- **MainActivity**: Main UI controller
+- **GroceryViewModel**: Manages UI-related data
+- **GroceryRepository**: Handles data operations
+- **GroceryDatabase**: Local database implementation
+- **GroceryRVAdapter**: RecyclerView adapter for list display
 
 
 
